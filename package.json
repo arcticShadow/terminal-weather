@@ -1,0 +1,14 @@
+{
+  "name": "terminal-weather",
+  "version": "1.0.0",
+  "description": "Retreive weather for location derived from text based query and present in the terminal",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "npx semantic-release"
+  },
+  "keywords": [],
+  "author": "cole.diffin@gmail.com",
+  "license": "ISC"
+}
