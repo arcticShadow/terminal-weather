@@ -1,3 +1,12 @@
-import { trace } from "./logger.mjs";
+import { debug } from "console";
+import { getArguments } from "./input-argument.mjs";
+import { info } from "./logger.mjs";
+import { getWeatherFor } from "./weather.mjs";
 
-trace("Hello World!")
+info("Hello World!");
+
+const searchLocation = getArguments()[0];
+
+const weather = await getWeatherFor(searchLocation);
+
+debug(weather);
