@@ -22,6 +22,8 @@ export const getConfig = async () => {
     try {
       const dotEnvFileHandle = await findDotEnv();
       const envFile = await readFile(dotEnvFileHandle);
+      await dotEnvFileHandle.close();
+
       const envFileLines = envFile.toString().split("\n");
 
       for (let line of envFileLines) {

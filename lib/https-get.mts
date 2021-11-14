@@ -1,6 +1,6 @@
 import { get as https_get } from "https";
 
-export const get = async (url: URL | string) =>
+export const get = async (url: URL | string): Promise<string> =>
   new Promise((resolve, reject) =>
     https_get(url, (resp) => {
       let data = "";

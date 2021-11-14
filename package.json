@@ -13,6 +13,7 @@
   "author": "cole.diffin@gmail.com",
   "license": "ISC",
   "devDependencies": {
+    "@types/blessed": "^0.1.19",
     "@types/node": "^16.11.7",
     "@typescript-eslint/eslint-plugin": "^5.3.1",
     "blessed": "^0.1.81",
@@ -27,5 +28,8 @@
   },
   "bin": {
     "terminal-weather": "lib/index.mjs"
+  },
+  "dependencies": {
+    "date-fns": "^2.25.0"
   }
 }
