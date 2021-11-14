@@ -1,11 +1,12 @@
 {
-  "name": "terminal-weather",
+  "name": "@arcticshadow/terminal-weather",
   "version": "1.0.0",
   "description": "Retreive weather for location derived from text based query and present in the terminal",
   "main": "index.mjs",
   "type": "module",
   "scripts": {
     "build": "tsc",
+    "start": "node lib/index.mjs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "npx semantic-release"
   },
