@@ -11,7 +11,6 @@ export const get = async (url: URL | string): Promise<string> =>
       });
 
       resp.on("end", () => {
-        console.log(JSON.parse(data).explanation);
         resolve(data);
       });
     }).on("error", reject)

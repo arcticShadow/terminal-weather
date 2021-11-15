@@ -1,5 +1,4 @@
-import { debug } from "console";
-import { error } from "./logger.mjs";
+import { debug, error } from "./logger.mjs";
 
 export const getArguments = () => {
   let args = process.argv;

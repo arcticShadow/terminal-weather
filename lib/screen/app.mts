@@ -22,9 +22,6 @@ export class App {
       return process.exit(0);
     });
 
-    // Focus our element.
-    // box.focus();
-
     // Render the screen.
     this.screen.render();
   }
